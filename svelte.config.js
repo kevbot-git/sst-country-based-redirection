@@ -1,5 +1,5 @@
-import adapter from "svelte-kit-sst";
-import { vitePreprocess } from "@sveltejs/kit/vite";
+import adapter from 'svelte-kit-sst';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
