@@ -6,7 +6,7 @@ import type { SupportedAppRegion } from './src/lib'
 export default {
   config(_input) {
     return {
-      name: 'sst-playground',
+      name: 'sst-country-based-redirection',
       region: 'us-east-1',
       stage: 'kev'
     };
