@@ -27,6 +27,7 @@ export default {
       
       stack.addOutputs({
         url: site.url,
+        regionDetector: siteRegionDetector.cdk.redirectFunction.functionName,
       });
     });
   },
