@@ -13,6 +13,7 @@ export function addBehaviorToSiteDistribution<TSupportedRegion extends string>({
         throw new Error(`Could not access distribution for StaticSite with ID: ${site.id}`)
     }
 
+    // TODO: Make this configurable to not just the root path
     (site.cdk.distribution as Distribution).addBehavior('/', new S3Origin(site.cdk.bucket), {
         functionAssociations: [
           {
