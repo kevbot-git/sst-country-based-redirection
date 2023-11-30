@@ -5,12 +5,15 @@ export default {
   config(_input) {
     return {
       name: 'sst-playground',
-      region: 'us-east-1',
+      region: 'ap-southeast-2',
+      stage: 'kev'
     };
   },
   stacks(app) {
     app.stack(function Site({ stack }) {
+
       const site = new SvelteKitSite(stack, 'site');
+      
       stack.addOutputs({
         url: site.url,
       });
