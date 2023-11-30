@@ -1,10 +1,10 @@
 import { FunctionEventType, type Distribution, OriginRequestPolicy } from 'aws-cdk-lib/aws-cloudfront';
 import { S3Origin } from 'aws-cdk-lib/aws-cloudfront-origins';
-import type { StaticSite } from 'sst/constructs';
 import type { RedirectFunction } from './RedirectFunction';
+import type { Site } from './types';
 
 interface AddBehaviorToSiteDistributionParams<TSupportedRegion extends string> {
-    site: StaticSite,
+    site: Site,
     redirectFunction: RedirectFunction<TSupportedRegion>,
 }
 
